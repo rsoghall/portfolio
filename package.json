@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "server/server.js",
   "scripts": {
     "start": "nodemon"
@@ -13,5 +12,15 @@
     "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "nodemailer": "^6.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsoghall/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rsoghall/portfolio/issues"
+  },
+  "homepage": "https://github.com/rsoghall/portfolio#readme",
+  "description": ""
 }
