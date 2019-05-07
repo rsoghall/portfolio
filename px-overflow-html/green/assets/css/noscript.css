@@ -1,0 +1,19 @@
+/*
+	Overflow by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* Header */
+
+	body.is-preload #header {
+		opacity: 1;
+	}
+
+		body.is-preload #header footer {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
