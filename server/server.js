@@ -3,6 +3,7 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const app = express()
 app.use(express.static(`${__dirname}/../public/`))
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 const { SERVER_PORT, MAIL_USER, MAIL_PASSWORD, FROM, TO} = process.env
 const transporter = nodemailer.createTransport({
@@ -15,12 +16,14 @@ const transporter = nodemailer.createTransport({
 
 
 app.post('/api/email', (req, res) => {
-    const { name, message, from, subject } = req.body
+    console.log (req.body)
+    const { name, message, email } = req.body
+    console.log(name, message, email)
     const mailOptions = {
         from: FROM,
         to: TO,
         subject: `ALERT: email from ${name}`,
-        text: `from: ${from}, subject: ${subject}, message: ${message}`
+        text: `from: ${email}, message: ${message}`
 
     }
     transporter.sendMail(mailOptions, (error, info) => {

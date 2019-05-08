@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>Ryan Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,9 +31,11 @@
 						<a href="#"><img class="RyanImage" src="images/Ryan.jpg" alt="Ryan"/></a>
 					<h2>Hi, I'm Ryan. Nice to meet you.</h2>
 				</header>
-				<p>I have 23 years of experience in the IT Industry but I now have a new passion... coding. I have always loved to build
-					and fix things. Throughout my IT career, clients have often asked me to build their website or build an app for them.
-					I now have the desire and skills needed to provide web develpment services.
+				<p>
+					I have always loved to build and fix things. After 23 years of experience in the IT industry, 
+					and repeated requests from clients to build websites and/or apps, I discovered a new passion 
+					for coding. I’m excited to announce that I can now offer a full-service IT experience for all 
+					of your web development needs.
 				</p>
 				<footer>
 					<a href="#first" class="button style2 scrolly">Sed at nibh egestas</a>
@@ -93,12 +95,17 @@
 					<h2>Nisl sed ultricies</h2>
 					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
 				</header>
-				<form method="post" action="#">
+				<form method="post" action="/api/email">
 					<div class="row gtr-50">
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="col-6 col-12-mobile"><input type="text" class="text" name="form-name" placeholder="Name" /></div>
+						<div class="col-6 col-12-mobile"><input type="text" class="text" name="form-email" placeholder="Email" /></div>
 						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
+							<textarea name="form-message" placeholder="Message"></textarea>
+						</div>
+						<div>
+							<h2 id="form-feedback">
+								Email Sent
+							</h2>
 						</div>
 						<div class="col-12">
 							<ul class="actions">
@@ -282,6 +289,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/form.js"></script>
 
 	</body>
 </html>
