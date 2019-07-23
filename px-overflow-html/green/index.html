@@ -5,6 +5,50 @@
 	License: pixelarity.com/license
 -->
 <html>
+		<script> 
+				function GEEKFORGEEKS()                                    
+				{ 
+					var name = document.forms["contactForm"]["Name"];               
+					var email = document.forms["contactForm"]["EMail"];    
+					var message = document.forms["contactForm"]["Message"];   
+				   
+					if (name.value == "")                                  
+					{ 
+						window.alert("Please enter your name."); 
+						name.focus(); 
+						return false; 
+					} 
+					   
+					if (email.value == "")                                   
+					{ 
+						window.alert("Please enter a valid e-mail address."); 
+						email.focus(); 
+						return false; 
+					} 
+				   
+					if (email.value.indexOf("@", 0) < 0)                 
+					{ 
+						window.alert("Please enter a valid e-mail address."); 
+						email.focus(); 
+						return false; 
+					} 
+				   
+					if (email.value.indexOf(".", 0) < 0)                 
+					{ 
+						window.alert("Please enter a valid e-mail address."); 
+						email.focus(); 
+						return false; 
+					} 
+				   
+					if (message.value == "")                           
+					{ 
+						window.alert("Please type a message."); 
+						message.focus(); 
+						return false; 
+					}  
+				   
+					return true; 
+				}</script> 
 	<head>
 		<title>Untitled</title>
 		<meta charset="utf-8" />
@@ -91,7 +135,7 @@
 					<h2>Nisl sed ultricies</h2>
 					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
 				</header>
-				<form method="post" action="#">
+				<form name=contactForm onsubmit="return GEEKFORGEEKS" method="post" action="/submit.php">
 					<div class="row gtr-50">
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>

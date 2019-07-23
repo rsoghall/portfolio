@@ -1627,7 +1627,7 @@ input, select, textarea {
 		transition: background-color 0.35s ease-in-out;
 		-webkit-appearance: none;
 		display: block;
-		border: 0;
+		border: 2px solid #0bb7c6;
 		background: #f1f1f1;
 		width: 100%;
 		padding: 0.75em;
@@ -2105,7 +2105,7 @@ input, select, textarea {
 			}
 
 		#banner p {
-			margin: 0;
+			margin: 100px;
 		}
 
 		#banner footer {
